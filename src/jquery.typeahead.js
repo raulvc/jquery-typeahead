@@ -1190,7 +1190,7 @@
                                 _request.callback.always.call(scope, data, textStatus, jqXHR);
 
                                 // #248, #303 Aborted requests would call populate with invalid data
-                                if (typeof jqXHR !== "object") return;
+                                // if (typeof jqXHR !== "object") return;
 
                                 // #265 Modified data from ajax.callback.done is not being registered (use of _groupData[_group])
                                 scope.populateSource(
